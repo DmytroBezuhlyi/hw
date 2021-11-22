@@ -1,0 +1,23 @@
+{
+  "pages-titles": {
+    "home-page-title": "Blog Page",
+    "about-page-title": "About Page",
+    "info-page-title": "Info Page",
+    "login-page-title": "Login Page"
+  },
+  "empty-page": "Пока здесь пусто",
+  "menu": {
+    "home": "Главная",
+    "info": "Инфо",
+    "about": "О нас"
+  },
+  "buttons": {
+    "button-logout": "Выход"
+  },
+  "footer-text": "Freebie Разработан Kishore для Project365.Design",
+  "article": {
+    "destination-title": "Место",
+    "author-title": "Автор",
+    "view-more-button": "Читать далее"
+  }
+}

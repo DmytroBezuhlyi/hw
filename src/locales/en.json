@@ -1,0 +1,23 @@
+{
+  "pages-titles": {
+    "home-page-title": "Blog Page",
+    "about-page-title": "About Page",
+    "info-page-title": "Info Page",
+    "login-page-title": "Login Page"
+  },
+  "empty-page": "Page empty",
+  "menu": {
+    "home": "Home",
+    "info": "Info",
+    "about": "About"
+  },
+  "buttons": {
+    "button-logout": "Logout"
+  },
+  "footer-text": "Freebie Designed By Kishore for Project365.Design",
+  "article": {
+    "destination-title": "Destination",
+    "author-title": "Added",
+    "view-more-button": "Read more"
+  }
+}
