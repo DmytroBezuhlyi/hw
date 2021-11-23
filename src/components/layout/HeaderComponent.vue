@@ -37,6 +37,7 @@
           <el-radio-button data-test="en" label="en">En</el-radio-button>
         </el-radio-group>
         <el-button
+          v-if="$route.name !== 'Login'"
           data-test="logout"
           @click="logout"
           class="logout-btn"
@@ -131,6 +132,9 @@ export default class HeaderComponent extends Vue {
 .header-logo {
   padding: 5px 10px;
   display: flex;
+  img {
+    max-width: 40px;
+  }
 }
 
 .el-radio-group {

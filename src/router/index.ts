@@ -32,11 +32,6 @@ const routes: Array<RouteConfig> = [
     name: "Login",
     component: LoginPage,
   },
-  {
-    path: "*",
-    name: "404",
-    component: PageNotFound,
-  },
 ];
 
 const router = new VueRouter({

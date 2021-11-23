@@ -3,7 +3,7 @@
     <el-row>
       <el-col :span="24">
         <router-link class="footer-logo" to="/">
-          <img src="@/assets/img/footer-logo.svg" alt="logo" />
+          <img src="@/assets/img/footer-logo.png" alt="logo" />
         </router-link>
       </el-col>
     </el-row>
@@ -31,6 +31,9 @@ export default class FooterComponent extends Vue {}
   .footer-logo {
     display: inline-block;
     margin-bottom: 30px;
+    img {
+      max-width: 100px;
+    }
     @media (max-width: 768px) {
       margin-bottom: 15px;
     }
