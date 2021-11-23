@@ -12,12 +12,17 @@
     "about": "About"
   },
   "buttons": {
-    "button-logout": "Logout"
+    "button-logout": "Logout",
+    "button-submit": "Submit",
+    "button-reset": "Reset",
+    "button-back": "Back"
   },
   "footer-text": "Freebie Designed By Kishore for Project365.Design",
   "article": {
     "destination-title": "Destination",
-    "author-title": "Added",
-    "view-more-button": "Read more"
-  }
+    "author-title": "Added by",
+    "view-more-button": "Read more",
+    "posted-date": "Created"
+  },
+  "password": "Password"
 }

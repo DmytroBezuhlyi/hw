@@ -1,7 +1,7 @@
 <template>
   <el-row type="flex" justify="center">
-    <el-col :span="6">
-      <h1>Login</h1>
+    <el-col :span="12">
+      <h1>{{ $t("pages-titles.login-page-title") }}</h1>
       <el-form
         :model="ruleForm"
         status-icon
@@ -15,10 +15,10 @@
             data-test="email"
             type="text"
             v-model="ruleForm.email"
-            autocomplete="off"
+            autocomplete="on"
           ></el-input>
         </el-form-item>
-        <el-form-item label="Password" prop="password">
+        <el-form-item :label="$t('password')" prop="password">
           <el-input
             data-test="password"
             type="password"
@@ -31,11 +31,12 @@
             data-test="submit"
             type="primary"
             @click="submitForm('ruleForm')"
-            >Submit
+          >
+            {{ $t("buttons.button-submit") }}
           </el-button>
           <el-button data-test="reset" @click="resetForm('ruleForm')"
-            >Reset</el-button
-          >
+            >{{ $t("buttons.button-reset") }}
+          </el-button>
         </el-form-item>
       </el-form>
     </el-col>
