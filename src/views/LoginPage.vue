@@ -90,19 +90,9 @@ export default class LoginPage extends Vue {
   submitForm(formName: any) {
     (this.$refs[formName] as any).validate((valid: any) => {
       if (valid) {
-        axios
-          .post("http://localhost:3000/login", {
-            email: this.ruleForm.email,
-            password: this.ruleForm.password,
-          })
-          .then((res) => {
-            const token = JSON.stringify(res.data);
-            localStorage.setItem("currentUser", token);
-            this.$router.push({ name: "Home" });
-          })
-          .catch((e) => {
-            console.log(e);
-          });
+        console.log(
+          `email - ${this.ruleForm.email}; password - ${this.ruleForm.password}`
+        );
       } else {
         console.log("error submit!!");
         return false;

@@ -22,9 +22,11 @@
                 >{{ $t("menu.home") }}
               </router-link>
             </el-menu-item>
-            <el-menu-item index="2" disabled>{{
-              $t("menu.info")
-            }}</el-menu-item>
+            <el-menu-item index="2">
+              <router-link data-test="info" to="/info"
+                >{{ $t("menu.info") }}
+              </router-link>
+            </el-menu-item>
             <el-menu-item index="3">
               <router-link data-test="about" to="/about"
                 >{{ $t("menu.about") }}
@@ -70,6 +72,7 @@ export default class HeaderComponent extends Vue {
   menuNav() {
     this.menuIsActive = !this.menuIsActive;
   }
+
   switchLang() {
     this.$i18n.locale = this.lang;
   }
@@ -132,6 +135,7 @@ export default class HeaderComponent extends Vue {
 .header-logo {
   padding: 5px 10px;
   display: flex;
+
   img {
     max-width: 40px;
   }

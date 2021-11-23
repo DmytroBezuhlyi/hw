@@ -1,10 +1,10 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "@/views/Home.vue";
-import About from "@/views/About.vue";
+import AboutPage from "@/views/AboutPage.vue";
 import LoginPage from "@/views/LoginPage.vue";
-import PageNotFound from "@/views/PageNotFound.vue";
 import ArticlePage from "@/views/ArticlePage.vue";
+import InfoPage from "@/views/InfoPage.vue";
 
 Vue.use(VueRouter);
 
@@ -18,7 +18,13 @@ const routes: Array<RouteConfig> = [
   {
     path: "/about",
     name: "About",
-    component: About,
+    component: AboutPage,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: "/info",
+    name: "Info",
+    component: InfoPage,
     meta: { requiresAuth: true },
   },
   {
